@@ -1,0 +1,21 @@
+.cont-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #151E21;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.cont-LinkedIn{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s;
+}
+
+.cont-LinkedIn:hover{
+  color: #00C8E0;
+  cursor: pointer;
+}
