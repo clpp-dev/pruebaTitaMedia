@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [https://pruebatitamedia.pages.dev/](https://pruebatitamedia.pages.dev/).
 
 ## Description
-Application as a technical test for TiTa Media, you can use google authenticator to log in and see data obtained from the api [hhttps://dummyapi.io/docs/post](https://dummyapi.io/docs/post).
+Application as a technical test for TiTa Media, you can use google authenticator to log in and see data obtained from the api [https://dummyapi.io/docs/post](https://dummyapi.io/docs/post).
 
 
 ## Available Scripts
