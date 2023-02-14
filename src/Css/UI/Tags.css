@@ -1,0 +1,24 @@
+.cont-tags{
+  margin-top: 1rem;
+}
+
+.btn-filter-tag{
+  padding: 0.2rem 1.5rem;
+  margin: 0 10px;
+  color: #00C8E0;
+  background-color: #373838;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.btn-filter-tag:hover{
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+.btn-filter-tag:active{
+  color: #373838;
+  background-color: #00C8E0;
+}

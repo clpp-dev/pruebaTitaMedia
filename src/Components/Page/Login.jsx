@@ -12,8 +12,8 @@ export const Login = () => {
 
   return (
     <div className='cont-page-login'>
-      <h1 className='login-title'>¡Bienvenid@!</h1>
-      <p className='login-subtitle'>Prueba técnica C. Leandro Pérez </p>
+      <h1 className='login-title'>¡welcome!</h1>
+      <p className='login-subtitle'>Technical test - C. Leandro Pérez </p>
       <GoogleLogin
         onSuccess={(credentialResponse) => {
           const details = jwtDecode(credentialResponse.credential);
@@ -21,7 +21,7 @@ export const Login = () => {
           navigate('/posts');
         }}
         onError={() => {
-          console.log('Login Failed');
+          console.error('Login Failed');
           navigate('/');
         }}
       />

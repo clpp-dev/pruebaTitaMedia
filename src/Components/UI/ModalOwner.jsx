@@ -3,7 +3,6 @@ import '../../Css/UI/ModalOwner.css';
 
 
 export const ModalOwner = ({ data, setClose }) => {
-console.log('🚀 > > > > ModalOwner > > > > data', data);
 
   return (
     <div className='cont-bg-modal-owner' onClick={() => setClose()}>

@@ -5,7 +5,6 @@ import { ModalComments } from './ModalComments';
 import { ModalOwner } from './ModalOwner';
 
 export const CardPosts = ({ data }) => {
-console.log('🚀 > > > > CardPosts > > > > data', data);
 
   const {currentIdPost, setCurrentIdPost} = useContext(ApiContext);
   const [currentPostData, setCurrentPostData] = useState({})
@@ -27,7 +26,7 @@ console.log('🚀 > > > > CardPosts > > > > data', data);
   return (
     <>
       <div className='cont-cards-posts'>
-        {data.map((post) => (
+        {data?.map((post) => (
           <div className='cardPost' id={post.id} key={post.id}>
             <img src={post.image} alt={post.text} />
             <p>{post.text}</p>
@@ -39,12 +38,12 @@ console.log('🚀 > > > > CardPosts > > > > data', data);
               ))}
             </div>
             <p>Likes: {post.likes}</p>
-            <button className='custom-btn-comments' onClick={()=> {handleOpenCloseModalCommets(post.id) }}>Ver comentarios</button>
+            <button className='custom-btn-comments' onClick={()=> {handleOpenCloseModalCommets(post.id) }}>Commets</button>
             <div className='cont-owner-post'>
               <img src={post.owner.picture} alt={post.owner.firstName} />
               <div>
                 <h4>{post.owner.firstName}</h4>
-                <button className='custom-btn-owner' onClick={()=> {handleOpenCloseModalOwner(post) }}>Ver usuario</button>
+                <button className='custom-btn-owner' onClick={()=> {handleOpenCloseModalOwner(post) }}>View details</button>
               </div>
             </div>
           </div>

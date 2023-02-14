@@ -6,9 +6,6 @@ import { SectionPosts } from '../Layout/SectionPosts';
 import { CardPosts } from '../UI/CardPosts';
 
 export const Posts = () => {
-  const {allPosts, currentIdPost, setCurrentIdPost} = useContext(ApiContext);
-  console.log('🚀 > > > > Posts > > > > allPosts', allPosts);
-
   return (
     <>
       <NavBar />

@@ -18,7 +18,7 @@ export const NavBar = () => {
           window.location('/');
         }}
       >
-        Cerrar Sesión
+        Logout
       </button>
     </nav>
   );
