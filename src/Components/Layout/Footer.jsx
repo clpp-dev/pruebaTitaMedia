@@ -24,7 +24,7 @@ export const Footer = () => {
           <line x1='12' y1='16' x2='12' y2='11' />
           <path d='M16 16v-3a2 2 0 0 0 -4 0' />
         </svg>
-        <h4>Cristian Leandro Perez Pelaez</h4>
+        <h4>Cristian Leandro Pérez Peláez</h4>
       </div>
     </footer>
   );
