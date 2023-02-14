@@ -1,0 +1,41 @@
+.cont-page-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../../Assets/Img/bg-titamedia.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.login-title {
+  background-image: linear-gradient(90deg, #456ee8 0%, #d927dc 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 90px;
+}
+
+.login-subtitle {
+  padding: 0 0 1rem 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 650px) {
+  .login-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 411px) {
+  .login-title {
+    font-size: 2rem;
+  }
+  .login-subtitle{
+    font-size: 0.7rem;
+  }
+}
+
