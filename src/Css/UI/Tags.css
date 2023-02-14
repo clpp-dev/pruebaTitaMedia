@@ -1,5 +1,10 @@
 .cont-tags{
-  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  gap: 10px;
 }
 
 .btn-filter-tag{
