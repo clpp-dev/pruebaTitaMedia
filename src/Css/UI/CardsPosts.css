@@ -1,0 +1,63 @@
+.cont-cards-posts {
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 315PX);
+  gap: 20px;
+  padding: 2rem;
+  width: 90%;
+  place-content: center;
+  
+}
+
+.cardPost{
+  background-color: rgb(22, 70, 70);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.cardPost img {
+  max-width: 250px;
+  border-radius: 15px;
+}
+
+.cardPost p {
+  color: #fff
+}
+
+.custom-btn-tag{
+  padding: 0.3rem 0.6rem;
+  margin: 0 5px;
+  color: #00C8E0;
+  background-color: #373838;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.custom-btn-tag:hover{
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  letter-spacing: 1px;
+}
+
+
+.custom-btn-comments{
+  padding: 0.3rem 0.6rem;
+  margin-top: 1rem;
+  color: #00C8E0;
+  background-color: #373838;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+  border: 1px solid #00C8E0 ;
+}
+
+.custom-btn-comments:hover{
+  transform: scale(1.05);
+  filter: brightness(1.1);
+  cursor: pointer;
+}

@@ -1,10 +1,9 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../../Contexts/Auth/AuthConext';
-import '../../Css/Layout/NavBar.css'
+import '../../Css/Layout/NavBar.css';
 
 export const NavBar = () => {
-
-  const { userData } = useContext(AuthContext);
+  const { userData, setUserData } = useContext(AuthContext);
 
   return (
     <nav className='navBar'>
@@ -12,7 +11,13 @@ export const NavBar = () => {
         <img src={userData?.picture} alt='USAURIO' />
         <h4 className=''>{userData.name}</h4>
       </div>
-      <button className='custom-btn-logout' onClick={()=> console.log('TODO: crear funcion cerrar sesión como helper')}>
+      <button
+        className='custom-btn-logout'
+        onClick={() => {
+          setUserData(null);
+          window.location('/');
+        }}
+      >
         Cerrar Sesión
       </button>
     </nav>

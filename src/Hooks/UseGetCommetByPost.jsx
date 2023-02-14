@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchCommentsByPost } from "../../Services/getCommentsByPost";
+import { fetchCommentsByPost } from "../Services/getCommentsByPost";
 
 const UseGetCommetByPost = ({idPost}) => {
     const [commentsByPost, setCommentsByPost] = useState([]);
