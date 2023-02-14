@@ -5,7 +5,6 @@ import { ModalComments } from './ModalComments';
 import { ModalOwner } from './ModalOwner';
 
 export const CardPosts = ({ data }) => {
-  console.log('🚀 > > > > CardPosts > > > > data', data);
   const { currentIdPost, setCurrentIdPost } = useContext(ApiContext);
   const [currentPostData, setCurrentPostData] = useState({});
 
