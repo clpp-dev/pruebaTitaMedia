@@ -4,18 +4,12 @@ import { AuthContext } from './AuthConext';
 export const AuthContextProvider = ({ children }) => {
   
   const [userData, setUserData] = useState(null)
+  console.log('🚀 > > > > AuthContextProvider > > > > userData', userData);
   
-  const fakeData = {
-    name: 'Natalia',
-    lastName: 'Sierra',
-    age: 19,
-    token: true,
-  };
-
   return (
     <>
       <AuthContext.Provider 
-      value={{fakeData, userData, setUserData }}>
+      value={{ userData, setUserData }}>
         {children}
       </AuthContext.Provider>
     </>

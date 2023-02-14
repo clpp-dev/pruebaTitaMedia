@@ -7,12 +7,12 @@ import { ProtectedRoutes } from "./Router/ProtectedRoutes";
 
 function App() {
 
-  const { fakeData } = useContext(AuthContext);
+  const { userData } = useContext(AuthContext);
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />}/>
+        <Route path="/" element={userData?.jti ? <Posts /> : <Login />}/>
 
         <Route element={<ProtectedRoutes /> }>
           <Route path="/posts" element={<Posts />}/>

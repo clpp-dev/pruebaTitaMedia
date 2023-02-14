@@ -6,7 +6,7 @@ export const ProtectedRoutes = () => {
 
   const { userData } = useContext(AuthContext);
 
-    const IsAuth = userData;
+    const IsAuth = userData?.jti;
 
     if (!IsAuth) {
       return <Navigate to="/"/>
