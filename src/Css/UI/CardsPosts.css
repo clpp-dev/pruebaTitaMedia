@@ -14,18 +14,22 @@
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 0 1rem;
+  overflow: hidden;
 }
 
 .cardPost img {
   max-width: 250px;
+  max-height: 250px;
   border-radius: 15px;
 }
 
 .cardPost p {
-  color: #fff
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .custom-btn-tag{
@@ -44,7 +48,6 @@
   letter-spacing: 1px;
 }
 
-
 .custom-btn-comments{
   padding: 0.3rem 0.6rem;
   margin-top: 1rem;
@@ -60,4 +63,41 @@
   transform: scale(1.05);
   filter: brightness(1.1);
   cursor: pointer;
+  background-color: aliceblue;
+  color: #373838;
+  font-weight: 600;
+}
+
+.cont-owner-post{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 20px;
+  padding: 1rem 0;
+}
+
+.cont-owner-post img{
+  max-width: 50px;
+}
+
+.cont-owner-post{
+  background-color: #373838;
+  width: calc(100% + 2rem);
+  margin-top: 1rem;
+}
+
+.custom-btn-owner{
+  padding: 0.1rem 0rem;
+  color: #00C8E0;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.custom-btn-owner:hover{
+  filter: brightness(1.5);
+  cursor: pointer;
+  font-weight: 500;
 }

@@ -7,10 +7,7 @@ import { CardPosts } from '../UI/CardPosts';
 
 export const Posts = () => {
   const {allPosts, currentIdPost, setCurrentIdPost} = useContext(ApiContext);
-  
-  
-  const commets = UseGetCommetByPost({idPost: "60d21b4667d0d8992e610c85"})
-  console.log('🚀 > > > > Posts > > > > commets', commets);
+  console.log('🚀 > > > > Posts > > > > allPosts', allPosts);
 
   return (
     <>

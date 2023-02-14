@@ -4,7 +4,8 @@ import { CardPosts } from '../UI/CardPosts';
 import '../../Css/Layout/SectionPosts.css'
 
 export const SectionPosts = () => {
-  const {allPosts, currentIdPost, setCurrentIdPost} = useContext(ApiContext);
+  const { allPosts } = useContext(ApiContext);
+  
 
   return (
     <div className='cont-SectionPosts'>
